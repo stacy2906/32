@@ -1,10 +1,13 @@
-﻿using System;
+﻿using CircleRegistrationSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Entity;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
-using CircleRegistrationSystem.Models;
+using System.Windows.Forms;
+using static CircleRegistrationSystem.Models.Registration;
 
 namespace CircleRegistrationSystem.Services
 {
@@ -700,7 +703,152 @@ namespace CircleRegistrationSystem.Services
                 return false;
             }
         }
+        // В класс DatabaseService добавьте этот метод:
+        public bool SendNotificationToUser(Guid userId, string title, string message, string notificationType, Guid? referenceId = null)
+        {
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["CircleRegistrationSystemConnection"].ConnectionString;
 
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand(
+                    @"INSERT INTO Notifications 
+                (Id, UserId, Title, Message, Type, ReferenceId, IsRead, CreatedAt) 
+              VALUES 
+                (@Id, @UserId, @Title, @Message, @Type, @ReferenceId, @IsRead, @CreatedAt)",
+                    connection))
+                {
+                    command.Parameters.AddWithValue("@Id", Guid.NewGuid());
+                    command.Parameters.AddWithValue("@UserId", userId);
+                    command.Parameters.AddWithValue("@Title", title);
+                    command.Parameters.AddWithValue("@Message", message);
+                    command.Parameters.AddWithValue("@Type", notificationType);
+                    command.Parameters.AddWithValue("@ReferenceId", referenceId ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@IsRead", false);
+                    command.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
+
+                    connection.Open();
+                    return command.ExecuteNonQuery() > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Ошибка отправки уведомления: {ex.Message}");
+                return false;
+            }
+        }
+        // В класс DatabaseService добавьте этот метод:
+        public List<RegistrationWithDetails> GetRegistrationsWithDetails()
+        {
+            var registrations = new List<RegistrationWithDetails>();
+
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["CircleRegistrationSystemConnection"].ConnectionString;
+
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand(
+                    @"SELECT 
+                r.Id,
+                r.ParticipantId,
+                r.CircleId,
+                r.ApplicationDate,
+                r.Status,
+                r.ApprovalDate,
+                r.RejectionReason,
+                r.CreatedAt,
+                u.FullName as ParticipantName,
+                c.Name as CircleName,
+                c.Category as CircleCategory,
+                c.Price as CirclePrice,
+                t.FullName as TeacherName
+              FROM Registrations r
+              LEFT JOIN Users u ON r.ParticipantId = u.Id
+              LEFT JOIN Circles c ON r.CircleId = c.Id
+              LEFT JOIN Users t ON c.TeacherId = t.Id
+              ORDER BY r.ApplicationDate DESC",
+                    connection))
+                {
+                    connection.Open();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var reg = new RegistrationWithDetails
+                            {
+                                Id = reader.GetGuid(0),
+                                ParticipantId = reader.GetGuid(1),
+                                CircleId = reader.GetGuid(2),
+                                ApplicationDate = reader.GetDateTime(3),
+                                Status = reader.GetString(4),
+                                CreatedAt = reader.GetDateTime(7),
+                                ParticipantName = reader.IsDBNull(8) ? "Неизвестно" : reader.GetString(8),
+                                CircleName = reader.IsDBNull(9) ? "Неизвестно" : reader.GetString(9),
+                                CircleCategory = reader.IsDBNull(10) ? null : reader.GetString(10),
+                                CirclePrice = reader.IsDBNull(11) ? 0 : reader.GetDecimal(11),
+                                TeacherName = reader.IsDBNull(12) ? null : reader.GetString(12)
+                            };
+
+                            if (!reader.IsDBNull(5))
+                                reg.ApprovalDate = reader.GetDateTime(5);
+
+                            if (!reader.IsDBNull(6))
+                                reg.RejectionReason = reader.GetString(6);
+
+                            registrations.Add(reg);
+                        }
+                    }
+                }
+
+                Debug.WriteLine($"Загружено {registrations.Count} заявок с деталями");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Ошибка получения заявок с деталями: {ex.Message}");
+                MessageBox.Show($"Ошибка загрузки заявок: {ex.Message}", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return registrations;
+        }
+        public List<Participant> GetAllTeachers()
+        {
+            var teachers = new List<Participant>();
+
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["CircleRegistrationSystemConnection"].ConnectionString;
+
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand(
+                    "SELECT * FROM Users WHERE Role = 'Teacher' AND IsActive = 1",
+                    connection))
+                {
+                    connection.Open();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var teacher = new Participant
+                            {
+                                Id = reader.GetGuid(reader.GetOrdinal("Id")),
+                                FullName = reader.GetString(reader.GetOrdinal("FullName")),
+                                Email = reader.GetString(reader.GetOrdinal("Email")),
+                                Role = reader.GetString(reader.GetOrdinal("Role")),
+                                IsActive = reader.GetBoolean(reader.GetOrdinal("IsActive"))
+                            };
+                            teachers.Add(teacher);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Ошибка получения преподавателей: {ex.Message}");
+            }
+
+            return teachers;
+        }
         public void Dispose()
         {
             // Ничего не делаем, так как соединение открывается/закрывается в каждом методе

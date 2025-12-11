@@ -50,5 +50,15 @@ namespace CircleRegistrationSystem.Models
             Status = "Pending";
             CreatedAt = DateTime.Now;
         }
+        // Добавьте в Models/Registration.cs или создайте отдельный файл
+        public class RegistrationWithDetails : Registration
+        {
+            public string ParticipantName { get; set; }
+            public string CircleName { get; set; }
+            public string ParticipantEmail { get; set; }
+            public string CircleCategory { get; set; }
+            public decimal CirclePrice { get; set; }
+            public string TeacherName { get; set; }
+        }
     }
 }

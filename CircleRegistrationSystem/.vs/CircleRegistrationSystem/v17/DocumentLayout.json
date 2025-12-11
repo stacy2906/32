@@ -3,52 +3,48 @@
   "WorkspaceRootPath": "D:\\github\\32\\CircleRegistrationSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|d:\\github\\32\\circleregistrationsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\models\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:models\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\rejectreasonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:rejectreasonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationdetailsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationdetailsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\periodselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:periodselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circledetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circledetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\rejectreasonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:rejectreasonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\periodselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:periodselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\attendanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -59,24 +55,52 @@
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:attendancereportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\services\\circleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\circleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circledetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circledetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleeditform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleeditform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\models\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:models\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationdetailsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationdetailsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\services\\circleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\circleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\periodselectionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,14 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleselectionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleselectionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\attendancereportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\rejectreasonform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:rejectreasonform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -151,16 +163,8 @@
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\registrationmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:registrationmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\models\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -188,10 +192,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CircleRegistrationSystem||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circleeditform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|solutionrelative:circleeditform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF8EB6F-99CD-4A7B-A48E-BFFDF034082C}|CircleRegistrationSystem.csproj|D:\\github\\32\\CircleRegistrationSystem\\circledetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -236,7 +236,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -244,104 +244,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegistrationManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.cs",
-              "RelativeDocumentMoniker": "RegistrationManagementForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\RegistrationManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:20:24.443Z"
+              "WhenOpened": "2025-12-11T15:38:21.953Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "Services\\DatabaseService.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "Services\\DatabaseService.cs",
+              "ViewState": "AgIAALgCAAAAAAAAAAAAwOICAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:21.943Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegistrationService.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\RegistrationService.cs",
+              "RelativeDocumentMoniker": "Services\\RegistrationService.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Services\\RegistrationService.cs",
+              "RelativeToolTip": "Services\\RegistrationService.cs",
+              "ViewState": "AgIAAJoBAAAAAAAAAAAnwKEBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:21.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAANADAAAAAAAAAAAkwN0DAABEAAAAAAAAAA==",
+              "ViewState": "AgIAADwFAAAAAAAAAAAAwHsFAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T15:38:20.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "MainForm.Designer.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.Designer.cs",
-              "RelativeToolTip": "MainForm.Designer.cs",
-              "ViewState": "AgIAAF8DAAAAAAAAAAAkwG0DAABCAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CircleSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleSelectionForm.cs",
+              "RelativeDocumentMoniker": "CircleSelectionForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\CircleSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "CircleSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:17.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegistrationManagementForm.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.cs",
-              "RelativeDocumentMoniker": "RegistrationManagementForm.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.cs",
-              "RelativeToolTip": "RegistrationManagementForm.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAAwDUBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:20:28.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Circle.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Circle.cs",
-              "RelativeDocumentMoniker": "Models\\Circle.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Circle.cs",
-              "RelativeToolTip": "Models\\Circle.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAwwEgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.963Z"
+              "WhenOpened": "2025-12-11T19:30:56.69Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RejectReasonForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RejectReasonForm.cs",
-              "RelativeDocumentMoniker": "RejectReasonForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\RejectReasonForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "ScheduleForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\ScheduleForm.cs",
+              "RelativeDocumentMoniker": "ScheduleForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\ScheduleForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ScheduleForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.963Z"
+              "WhenOpened": "2025-12-11T15:38:21.933Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CircleEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.cs",
-              "RelativeDocumentMoniker": "CircleEditForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\CircleEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "RejectReasonForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RejectReasonForm.cs",
+              "RelativeDocumentMoniker": "RejectReasonForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RejectReasonForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RejectReasonForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.953Z"
+              "WhenOpened": "2025-12-11T15:38:21.963Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RegistrationDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.cs",
-              "RelativeDocumentMoniker": "RegistrationDetailsForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\RegistrationDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "RegistrationManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RegistrationManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:55:39.375Z"
+              "WhenOpened": "2025-12-11T18:20:24.443Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RegistrationDetailsForm.Designer.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.Designer.cs",
-              "RelativeDocumentMoniker": "RegistrationDetailsForm.Designer.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.Designer.cs",
-              "RelativeToolTip": "RegistrationDetailsForm.Designer.cs",
-              "ViewState": "AgIAAKUBAAAAAAAAAAAkwL8BAAABAAAAAAAAAA==",
+              "Title": "RegistrationDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.cs",
+              "RelativeDocumentMoniker": "RegistrationDetailsForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RegistrationDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:39:04.611Z"
+              "WhenOpened": "2025-12-11T18:55:39.375Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
@@ -349,71 +359,84 @@
               "Title": "PeriodSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\PeriodSelectionForm.cs",
               "RelativeDocumentMoniker": "PeriodSelectionForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\PeriodSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\PeriodSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "PeriodSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T19:30:51.162Z"
+              "WhenOpened": "2025-12-11T19:30:51.162Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "CircleSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleSelectionForm.cs",
-              "RelativeDocumentMoniker": "CircleSelectionForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\CircleSelectionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T19:30:56.69Z"
+              "WhenOpened": "2025-12-11T15:38:21.953Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "CircleDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleDetailsForm.cs",
-              "RelativeDocumentMoniker": "CircleDetailsForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\CircleDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "AttendanceForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceForm.cs",
+              "RelativeDocumentMoniker": "AttendanceForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "AttendanceForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.953Z"
+              "WhenOpened": "2025-12-11T15:38:21.953Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AttendanceForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceForm.cs",
-              "RelativeDocumentMoniker": "AttendanceForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\AttendanceForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "AttendanceReportForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceReportForm.cs",
+              "RelativeDocumentMoniker": "AttendanceReportForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceReportForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "AttendanceReportForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.953Z"
+              "WhenOpened": "2025-12-11T18:58:56.361Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AttendanceReportForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceReportForm.cs",
-              "RelativeDocumentMoniker": "AttendanceReportForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\AttendanceReportForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "CircleEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.cs",
+              "RelativeDocumentMoniker": "CircleEditForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "CircleEditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:58:56.361Z"
+              "WhenOpened": "2025-12-11T15:38:21.953Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "CircleDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleDetailsForm.cs",
+              "RelativeDocumentMoniker": "CircleDetailsForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\CircleDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "CircleDetailsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.953Z"
+              "WhenOpened": "2025-12-11T15:38:21.953Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "CircleService.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\CircleService.cs",
-              "RelativeDocumentMoniker": "Services\\CircleService.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Services\\CircleService.cs",
-              "RelativeToolTip": "Services\\CircleService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwEcAAAAJAAAAAAAAAA==",
+              "Title": "RegistrationManagementForm.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.cs",
+              "RelativeToolTip": "RegistrationManagementForm.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAzwJEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.89Z"
+              "WhenOpened": "2025-12-11T18:20:28.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -425,19 +448,34 @@
               "RelativeToolTip": "Services\\NotificationService.cs",
               "ViewState": "AgIAAMcAAAAAAAAAAAArwNEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.892Z"
+              "WhenOpened": "2025-12-11T15:38:21.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "RegistrationService.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\RegistrationService.cs",
-              "RelativeDocumentMoniker": "Services\\RegistrationService.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Services\\RegistrationService.cs",
-              "RelativeToolTip": "Services\\RegistrationService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAkwE4AAAAJAAAAAAAAAA==",
+              "Title": "RegistrationManagementForm.Designer.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.Designer.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementForm.Designer.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.Designer.cs",
+              "RelativeToolTip": "RegistrationManagementForm.Designer.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAwwCABAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.892Z"
+              "WhenOpened": "2025-12-11T18:23:05.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CircleEditForm.Designer.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.Designer.cs",
+              "RelativeDocumentMoniker": "CircleEditForm.Designer.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.Designer.cs",
+              "RelativeToolTip": "CircleEditForm.Designer.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:21.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -447,13 +485,77 @@
               "RelativeDocumentMoniker": "Models\\Registration.cs",
               "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Registration.cs",
               "RelativeToolTip": "Models\\Registration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowDQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAwwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:22.003Z"
+              "WhenOpened": "2025-12-11T15:38:22.003Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
+              "Title": "CircleEditForm.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.cs",
+              "RelativeDocumentMoniker": "CircleEditForm.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.cs",
+              "RelativeToolTip": "CircleEditForm.cs",
+              "ViewState": "AgIAAHABAAAAAAAAAAAYwIkBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:21.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "MainForm.Designer.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.Designer.cs",
+              "RelativeToolTip": "MainForm.Designer.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAHgDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:17.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Circle.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Circle.cs",
+              "RelativeDocumentMoniker": "Models\\Circle.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Circle.cs",
+              "RelativeToolTip": "Models\\Circle.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAwwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:21.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RegistrationDetailsForm.Designer.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.Designer.cs",
+              "RelativeDocumentMoniker": "RegistrationDetailsForm.Designer.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.Designer.cs",
+              "RelativeToolTip": "RegistrationDetailsForm.Designer.cs",
+              "ViewState": "AgIAAKUBAAAAAAAAAAAkwL8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:39:04.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CircleService.cs",
+              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\CircleService.cs",
+              "RelativeDocumentMoniker": "Services\\CircleService.cs",
+              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Services\\CircleService.cs",
+              "RelativeToolTip": "Services\\CircleService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:21.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "PeriodSelectionForm.Designer.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\PeriodSelectionForm.Designer.cs",
               "RelativeDocumentMoniker": "PeriodSelectionForm.Designer.cs",
@@ -461,11 +563,12 @@
               "RelativeToolTip": "PeriodSelectionForm.Designer.cs",
               "ViewState": "AgIAALUAAAAAAAAAAAAkwM4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T19:19:02.38Z"
+              "WhenOpened": "2025-12-11T19:19:02.38Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "PeriodSelectionForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\PeriodSelectionForm.cs",
               "RelativeDocumentMoniker": "PeriodSelectionForm.cs",
@@ -473,11 +576,12 @@
               "RelativeToolTip": "PeriodSelectionForm.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAkwE4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T19:17:10.095Z"
+              "WhenOpened": "2025-12-11T19:17:10.095Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "CircleSelectionForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleSelectionForm.cs",
               "RelativeDocumentMoniker": "CircleSelectionForm.cs",
@@ -485,11 +589,12 @@
               "RelativeToolTip": "CircleSelectionForm.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAYwEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T19:16:23.098Z"
+              "WhenOpened": "2025-12-11T19:16:23.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "CircleSelectionForm.Designer.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleSelectionForm.Designer.cs",
               "RelativeDocumentMoniker": "CircleSelectionForm.Designer.cs",
@@ -497,11 +602,12 @@
               "RelativeToolTip": "CircleSelectionForm.Designer.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAkwIMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T19:16:30.02Z"
+              "WhenOpened": "2025-12-11T19:16:30.02Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -513,27 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ScheduleForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\ScheduleForm.cs",
-              "RelativeDocumentMoniker": "ScheduleForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\ScheduleForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CircleRegistrationSystem\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "AttendanceReportForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceReportForm.cs",
               "RelativeDocumentMoniker": "AttendanceReportForm.cs",
@@ -541,11 +627,12 @@
               "RelativeToolTip": "AttendanceReportForm.cs",
               "ViewState": "AgIAAPYAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:56:57.781Z"
+              "WhenOpened": "2025-12-11T18:56:57.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "AttendanceReportForm.Designer.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceReportForm.Designer.cs",
               "RelativeDocumentMoniker": "AttendanceReportForm.Designer.cs",
@@ -553,11 +640,12 @@
               "RelativeToolTip": "AttendanceReportForm.Designer.cs",
               "ViewState": "AgIAAO4AAAAAAAAAAAAkwAcBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:58:37.81Z"
+              "WhenOpened": "2025-12-11T18:58:37.81Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "AttendanceForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceForm.cs",
               "RelativeDocumentMoniker": "AttendanceForm.cs",
@@ -565,11 +653,12 @@
               "RelativeToolTip": "AttendanceForm.cs",
               "ViewState": "AgIAAFABAAAAAAAAAADwv1wBAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.951Z"
+              "WhenOpened": "2025-12-11T15:38:21.951Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "AttendanceForm.Designer.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\AttendanceForm.Designer.cs",
               "RelativeDocumentMoniker": "AttendanceForm.Designer.cs",
@@ -577,11 +666,12 @@
               "RelativeToolTip": "AttendanceForm.Designer.cs",
               "ViewState": "AgIAAB4BAAAAAAAAAAAkwDcBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.892Z"
+              "WhenOpened": "2025-12-11T15:38:21.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "Attendance.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Attendance.cs",
               "RelativeDocumentMoniker": "Models\\Attendance.cs",
@@ -593,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ReportService.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\ReportService.cs",
               "RelativeDocumentMoniker": "Services\\ReportService.cs",
@@ -605,19 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "DatabaseService.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\DatabaseService.cs",
-              "RelativeDocumentMoniker": "Services\\DatabaseService.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\Services\\DatabaseService.cs",
-              "RelativeToolTip": "Services\\DatabaseService.cs",
-              "ViewState": "AgIAAKQCAAAAAAAAAAAkwL0CAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "RejectReasonForm.Designer.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RejectReasonForm.Designer.cs",
               "RelativeDocumentMoniker": "RejectReasonForm.Designer.cs",
@@ -625,11 +703,12 @@
               "RelativeToolTip": "RejectReasonForm.Designer.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAkwFoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:22.003Z"
+              "WhenOpened": "2025-12-11T15:38:22.003Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "RejectReasonForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RejectReasonForm.cs",
               "RelativeDocumentMoniker": "RejectReasonForm.cs",
@@ -637,11 +716,12 @@
               "RelativeToolTip": "RejectReasonForm.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA3wCMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:22.003Z"
+              "WhenOpened": "2025-12-11T15:38:22.003Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "RegistrationDetailsForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationDetailsForm.cs",
               "RelativeDocumentMoniker": "RegistrationDetailsForm.cs",
@@ -649,11 +729,12 @@
               "RelativeToolTip": "RegistrationDetailsForm.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAAAPMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:38:47.668Z"
+              "WhenOpened": "2025-12-11T18:38:47.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "Notification.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "Models\\Notification.cs",
@@ -665,19 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "RegistrationManagementForm.Designer.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.Designer.cs",
-              "RelativeDocumentMoniker": "RegistrationManagementForm.Designer.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\RegistrationManagementForm.Designer.cs",
-              "RelativeToolTip": "RegistrationManagementForm.Designer.cs",
-              "ViewState": "AgIAABgBAAAAAAAAAAAkwDEBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:23:05.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "Schedule.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Schedule.cs",
               "RelativeDocumentMoniker": "Models\\Schedule.cs",
@@ -689,19 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CircleEditForm.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.cs",
-              "RelativeDocumentMoniker": "CircleEditForm.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.cs",
-              "RelativeToolTip": "CircleEditForm.cs",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAuwBQBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Participant.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Models\\Participant.cs",
               "RelativeDocumentMoniker": "Models\\Participant.cs",
@@ -713,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -725,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "SecurityService.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\SecurityService.cs",
               "RelativeDocumentMoniker": "Services\\SecurityService.cs",
@@ -737,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -749,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "App.config",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -757,11 +814,12 @@
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-11T15:38:21.963Z"
+              "WhenOpened": "2025-12-11T15:38:21.963Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
@@ -769,11 +827,12 @@
               "RelativeToolTip": "RegisterForm.cs",
               "ViewState": "AgIAAJ4AAAAAAAAAAAAAwLUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.981Z"
+              "WhenOpened": "2025-12-11T15:38:21.981Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "CircleRegistrationSystem",
               "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleRegistrationSystem.csproj",
               "RelativeDocumentMoniker": "CircleRegistrationSystem.csproj",
@@ -781,18 +840,6 @@
               "RelativeToolTip": "CircleRegistrationSystem.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-12-10T17:19:52.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "CircleEditForm.Designer.cs",
-              "DocumentMoniker": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.Designer.cs",
-              "RelativeDocumentMoniker": "CircleEditForm.Designer.cs",
-              "ToolTip": "D:\\github\\32\\CircleRegistrationSystem\\CircleEditForm.Designer.cs",
-              "RelativeToolTip": "CircleEditForm.Designer.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAAwOIAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.892Z"
             },
             {
               "$type": "Document",
@@ -804,7 +851,8 @@
               "RelativeToolTip": "CircleDetailsForm.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAQwGQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.892Z"
+              "WhenOpened": "2025-12-11T15:38:21.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -816,7 +864,8 @@
               "RelativeToolTip": "ScheduleForm.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAxwHoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.922Z"
+              "WhenOpened": "2025-12-11T15:38:21.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -828,7 +877,8 @@
               "RelativeToolTip": "ScheduleForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAOMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.922Z"
+              "WhenOpened": "2025-12-11T15:38:21.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -840,7 +890,8 @@
               "RelativeToolTip": "CircleDetailsForm.Designer.cs",
               "ViewState": "AgIAAAgCAAAAAAAAAAAQwBcCAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.922Z"
+              "WhenOpened": "2025-12-11T15:38:21.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -852,7 +903,8 @@
               "RelativeToolTip": "RegisterForm.Designer.cs",
               "ViewState": "AgIAAA8BAAAAAAAAAAAmwB4BAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:38:21.971Z"
+              "WhenOpened": "2025-12-11T15:38:21.971Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -1,7 +1,10 @@
-﻿using System;
+﻿using CircleRegistrationSystem.Models;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
-using CircleRegistrationSystem.Models;
 
 namespace CircleRegistrationSystem.Services
 {
@@ -31,18 +34,28 @@ namespace CircleRegistrationSystem.Services
                 // Сохраняем в БД
                 if (_db.UpdateRegistration(registration))
                 {
-                    // УВЕДОМЛЕНИЕ для участника
-                    var notificationService = new NotificationService(_db);
-                    notificationService.SendApprovalNotification(registrationId);
-
-                    // УВЕДОМЛЕНИЕ для преподавателя (если есть)
+                    // Отправляем уведомление пользователю
                     var circle = _db.GetCircleById(registration.CircleId);
+                    var user = _db.GetUserById(registration.ParticipantId);
+
+                    if (user != null && circle != null)
+                    {
+                        _db.SendNotificationToUser(
+                            registration.ParticipantId,
+                            "✅ Заявка подтверждена!",
+                            $"Ваша заявка на кружок '{circle.Name}' подтверждена. Можете начинать занятия!",
+                            "Approval",
+                            registrationId
+                        );
+                    }
+
+                    // Отправляем уведомление преподавателю (если есть)
                     if (circle?.TeacherId != null)
                     {
-                        notificationService.SendTeacherNotification(
+                        _db.SendNotificationToUser(
                             circle.TeacherId.Value,
-                            $"Новый участник подтвержден в кружке '{circle.Name}'",
-                            $"Участник {GetParticipantName(registration.ParticipantId)} подтвержден",
+                            "📝 Новый участник в кружке",
+                            $"В ваш кружок '{circle.Name}' добавлен новый участник: {user?.FullName}",
                             "NewParticipant",
                             registrationId
                         );
@@ -54,7 +67,7 @@ namespace CircleRegistrationSystem.Services
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Ошибка подтверждения заявки: {ex.Message}");
+                Debug.WriteLine($"Ошибка подтверждения заявки: {ex.Message}");
                 return false;
             }
         }
@@ -298,12 +311,48 @@ namespace CircleRegistrationSystem.Services
             }
         }
 
-   
+
 
         // Отклонение заявки
         public bool RejectRegistration(Guid registrationId, string reason, Guid rejectedBy)
         {
-            return UpdateRegistrationStatus(registrationId, "Rejected", rejectedBy, reason);
+            try
+            {
+                var registration = _db.GetRegistrationById(registrationId);
+                if (registration == null)
+                    return false;
+
+                registration.Status = "Rejected";
+                registration.RejectionReason = reason;
+                registration.RejectedBy = rejectedBy;
+                registration.UpdatedAt = DateTime.Now;
+
+                if (_db.UpdateRegistration(registration))
+                {
+                    // Отправляем уведомление пользователю
+                    var circle = _db.GetCircleById(registration.CircleId);
+                    var user = _db.GetUserById(registration.ParticipantId);
+
+                    if (user != null && circle != null)
+                    {
+                        _db.SendNotificationToUser(
+                            registration.ParticipantId,
+                            "❌ Заявка отклонена",
+                            $"Ваша заявка на кружок '{circle.Name}' отклонена. Причина: {reason}",
+                            "Rejection",
+                            registrationId
+                        );
+                    }
+
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Ошибка отклонения заявки: {ex.Message}");
+                return false;
+            }
         }
 
         // Получение заявок пользователя
@@ -311,12 +360,65 @@ namespace CircleRegistrationSystem.Services
         {
             try
             {
-                return _db.GetRegistrations()
-                    .Where(r => r.ParticipantId == userId)
-                    .ToList();
+                string connectionString = ConfigurationManager.ConnectionStrings["CircleRegistrationSystemConnection"].ConnectionString;
+
+                var registrations = new List<Registration>();
+
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand(
+                    @"SELECT r.*, c.Name as CircleName, u.FullName as TeacherName 
+              FROM Registrations r
+              LEFT JOIN Circles c ON r.CircleId = c.Id
+              LEFT JOIN Users u ON c.TeacherId = u.Id
+              WHERE r.ParticipantId = @UserId
+              ORDER BY r.ApplicationDate DESC",
+                    connection))
+                {
+                    command.Parameters.AddWithValue("@UserId", userId);
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var registration = new Registration
+                            {
+                                Id = reader.GetGuid(reader.GetOrdinal("Id")),
+                                ParticipantId = reader.GetGuid(reader.GetOrdinal("ParticipantId")),
+                                CircleId = reader.GetGuid(reader.GetOrdinal("CircleId")),
+                                ApplicationDate = reader.GetDateTime(reader.GetOrdinal("ApplicationDate")),
+                                Status = reader.GetString(reader.GetOrdinal("Status")),
+                                CreatedAt = reader.GetDateTime(reader.GetOrdinal("CreatedAt"))
+                            };
+
+                            // Дополнительная информация
+                            if (!reader.IsDBNull(reader.GetOrdinal("CircleName")))
+                            {
+                                registration.Circle = new Circle
+                                {
+                                    Id = registration.CircleId,
+                                    Name = reader.GetString(reader.GetOrdinal("CircleName"))
+                                };
+                            }
+
+                            if (!reader.IsDBNull(reader.GetOrdinal("TeacherName")))
+                            {
+                                registration.Circle.Teacher = new Participant
+                                {
+                                    FullName = reader.GetString(reader.GetOrdinal("TeacherName"))
+                                };
+                            }
+
+                            registrations.Add(registration);
+                        }
+                    }
+                }
+
+                return registrations;
             }
-            catch
+            catch (Exception ex)
             {
+                Debug.WriteLine($"Ошибка GetUserRegistrations: {ex.Message}");
                 return new List<Registration>();
             }
         }

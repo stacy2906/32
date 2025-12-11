@@ -1,11 +1,15 @@
-﻿using System;
+﻿using CircleRegistrationSystem.Models;
+using CircleRegistrationSystem.Services;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using CircleRegistrationSystem.Models;
-using CircleRegistrationSystem.Services;
+using static CircleRegistrationSystem.Models.Registration;
 
 namespace CircleRegistrationSystem.Forms
 {
@@ -14,7 +18,7 @@ namespace CircleRegistrationSystem.Forms
         private readonly DatabaseService _db;
         private readonly RegistrationService _registrationService;
         private readonly Participant _currentUser;
-        private List<Registration> _allRegistrations;
+        private List<RegistrationWithDetails> _allRegistrations;
 
         public RegistrationManagementForm(DatabaseService db, Participant currentUser)
         {
@@ -48,6 +52,15 @@ namespace CircleRegistrationSystem.Forms
                 btnReject.Visible = false;
                 btnExport.Visible = false;
             }
+
+            // Назначаем обработчики событий
+            btnApplyFilters.Click += BtnApplyFilters_Click;
+            btnClearFilters.Click += BtnClearFilters_Click;
+            btnApprove.Click += BtnApprove_Click;
+            btnReject.Click += BtnReject_Click;
+            btnViewDetails.Click += BtnViewDetails_Click;
+            btnExport.Click += BtnExport_Click;
+            btnClose.Click += BtnClose_Click;
         }
 
         private void ConfigureDataGridView()
@@ -58,42 +71,56 @@ namespace CircleRegistrationSystem.Forms
             {
                 DataPropertyName = "Id",
                 HeaderText = "ID",
-                Visible = false
+                Visible = false,
+                Name = "Id"
             });
 
             dgvRegistrations.Columns.Add(new DataGridViewTextBoxColumn
             {
                 DataPropertyName = "ParticipantName",
                 HeaderText = "Участник",
-                Width = 150
+                Width = 150,
+                Name = "ParticipantName"
             });
 
             dgvRegistrations.Columns.Add(new DataGridViewTextBoxColumn
             {
                 DataPropertyName = "CircleName",
                 HeaderText = "Кружок",
-                Width = 150
+                Width = 150,
+                Name = "CircleName"
             });
 
             dgvRegistrations.Columns.Add(new DataGridViewTextBoxColumn
             {
                 DataPropertyName = "ApplicationDate",
                 HeaderText = "Дата заявки",
-                Width = 120
+                Width = 120,
+                Name = "ApplicationDate"
             });
 
             dgvRegistrations.Columns.Add(new DataGridViewTextBoxColumn
             {
                 DataPropertyName = "Status",
                 HeaderText = "Статус",
-                Width = 100
+                Width = 100,
+                Name = "Status"
             });
 
             dgvRegistrations.Columns.Add(new DataGridViewTextBoxColumn
             {
-                DataPropertyName = "AttendanceStatus",
-                HeaderText = "Посещаемость",
-                Width = 100
+                DataPropertyName = "TeacherName",
+                HeaderText = "Преподаватель",
+                Width = 120,
+                Name = "TeacherName"
+            });
+
+            dgvRegistrations.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "CircleCategory",
+                HeaderText = "Категория",
+                Width = 100,
+                Name = "CircleCategory"
             });
         }
 
@@ -101,13 +128,45 @@ namespace CircleRegistrationSystem.Forms
         {
             try
             {
-                _allRegistrations = _registrationService.GetAllRegistrations();
+                Debug.WriteLine("Начинаем загрузку данных в RegistrationManagementForm...");
+                Debug.WriteLine($"DatabaseService: {_db != null}");
+
+                // ИСПОЛЬЗУЕМ НОВЫЙ МЕТОД ДЛЯ ПОЛУЧЕНИЯ ДАННЫХ
+                _allRegistrations = _db.GetRegistrationsWithDetails();
+
+                Debug.WriteLine($"Получено заявок: {_allRegistrations?.Count ?? 0}");
+
+                if (_allRegistrations != null && _allRegistrations.Count > 0)
+                {
+                    Debug.WriteLine("Первые 3 заявки:");
+                    foreach (var reg in _allRegistrations.Take(3))
+                    {
+                        Debug.WriteLine($"  - {reg.ParticipantName} -> {reg.CircleName} ({reg.Status})");
+                    }
+                }
+                    // ИСПОЛЬЗУЕМ НОВЫЙ МЕТОД ДЛЯ ПОЛУЧЕНИЯ ДАННЫХ
+                    _allRegistrations = _db.GetRegistrationsWithDetails();
+
+                if (_allRegistrations == null || _allRegistrations.Count == 0)
+                {
+                    MessageBox.Show("В базе данных нет заявок для отображения.\n\n" +
+                                  "Проверьте:\n" +
+                                  "1. Есть ли пользователи в системе\n" +
+                                  "2. Подавали ли пользователи заявки\n" +
+                                  "3. Корректность подключения к базе данных",
+                                  "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lblTotal.Text = "Всего: 0";
+                    return;
+                }
+
                 ApplyFilters();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка загрузки данных: {ex.Message}", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Ошибка загрузки данных: {ex.Message}\n\n" +
+                               $"Подробности: {ex.InnerException?.Message}",
+                               "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -115,6 +174,13 @@ namespace CircleRegistrationSystem.Forms
         {
             try
             {
+                if (_allRegistrations == null)
+                {
+                    dgvRegistrations.DataSource = null;
+                    lblTotal.Text = "Всего: 0";
+                    return;
+                }
+
                 var filtered = _allRegistrations.AsEnumerable();
 
                 // Фильтр по статусу
@@ -126,44 +192,60 @@ namespace CircleRegistrationSystem.Forms
                 // Фильтр по дате
                 if (dtpFromDate.Checked)
                 {
-                    filtered = filtered.Where(r => r.ApplicationDate >= dtpFromDate.Value);
+                    filtered = filtered.Where(r => r.ApplicationDate >= dtpFromDate.Value.Date);
                 }
 
                 if (dtpToDate.Checked)
                 {
-                    filtered = filtered.Where(r => r.ApplicationDate <= dtpToDate.Value.AddDays(1));
+                    filtered = filtered.Where(r => r.ApplicationDate <= dtpToDate.Value.Date.AddDays(1).AddSeconds(-1));
                 }
 
                 // Преобразование для отображения
                 var displayData = filtered.Select(r => new
                 {
-                    r.Id,
-                    ParticipantName = GetParticipantName(r.ParticipantId),
-                    CircleName = GetCircleName(r.CircleId),
-                    ApplicationDate = r.ApplicationDate.ToString("dd.MM.yyyy"),
+                    Id = r.Id,
+                    ParticipantName = r.ParticipantName ?? "Неизвестно",
+                    CircleName = r.CircleName ?? "Неизвестно",
+                    ApplicationDate = r.ApplicationDate.ToString("dd.MM.yyyy HH:mm"),
                     Status = GetStatusDisplay(r.Status),
-                    AttendanceStatus = r.AttendanceStatus ?? "Не указано"
+                    TeacherName = GetTeacherName(r.CircleId) ?? "Не указан",
+                    CircleCategory = r.CircleCategory ?? "Не указана"
                 }).ToList();
 
                 dgvRegistrations.DataSource = displayData;
                 lblTotal.Text = $"Всего: {displayData.Count}";
+
+                // Включаем/выключаем кнопки в зависимости от наличия данных
+                bool hasData = displayData.Count > 0;
+                btnApprove.Enabled = hasData;
+                btnReject.Enabled = hasData;
+                btnViewDetails.Enabled = hasData;
+                btnExport.Enabled = hasData;
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Ошибка фильтрации: {ex.Message}");
+                MessageBox.Show($"Ошибка при фильтрации данных: {ex.Message}",
+                               "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private string GetParticipantName(Guid participantId)
+        private string GetTeacherName(Guid circleId)
         {
-            var participant = _db.GetUserById(participantId);
-            return participant?.FullName ?? "Неизвестно";
-        }
-
-        private string GetCircleName(Guid circleId)
-        {
-            var circle = _db.GetCircleById(circleId);
-            return circle?.Name ?? "Неизвестно";
+            try
+            {
+                var circle = _db.GetCircleById(circleId);
+                if (circle?.TeacherId != null)
+                {
+                    var teacher = _db.GetUserById(circle.TeacherId.Value);
+                    return teacher?.FullName;
+                }
+            }
+            catch
+            {
+                // Игнорируем ошибки
+            }
+            return null;
         }
 
         private string GetStatusDisplay(string status)
@@ -179,12 +261,12 @@ namespace CircleRegistrationSystem.Forms
             }
         }
 
-        private void btnApplyFilters_Click(object sender, EventArgs e)
+        private void BtnApplyFilters_Click(object sender, EventArgs e)
         {
             ApplyFilters();
         }
 
-        private void btnClearFilters_Click(object sender, EventArgs e)
+        private void BtnClearFilters_Click(object sender, EventArgs e)
         {
             cmbStatus.SelectedIndex = 0;
             dtpFromDate.Checked = false;
@@ -192,7 +274,7 @@ namespace CircleRegistrationSystem.Forms
             ApplyFilters();
         }
 
-        private void btnApprove_Click(object sender, EventArgs e)
+        private void BtnApprove_Click(object sender, EventArgs e)
         {
             if (dgvRegistrations.SelectedRows.Count == 0)
             {
@@ -210,7 +292,7 @@ namespace CircleRegistrationSystem.Forms
                 {
                     MessageBox.Show("Заявка подтверждена", "Успех",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadData();
+                    LoadData(); // Перезагружаем данные
                 }
                 else
                 {
@@ -220,7 +302,7 @@ namespace CircleRegistrationSystem.Forms
             }
         }
 
-        private void btnReject_Click(object sender, EventArgs e)
+        private void BtnReject_Click(object sender, EventArgs e)
         {
             if (dgvRegistrations.SelectedRows.Count == 0)
             {
@@ -239,7 +321,7 @@ namespace CircleRegistrationSystem.Forms
                     {
                         MessageBox.Show("Заявка отклонена", "Успех",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadData();
+                        LoadData(); // Перезагружаем данные
                     }
                     else
                     {
@@ -250,7 +332,7 @@ namespace CircleRegistrationSystem.Forms
             }
         }
 
-        private void btnViewDetails_Click(object sender, EventArgs e)
+        private void BtnViewDetails_Click(object sender, EventArgs e)
         {
             if (dgvRegistrations.SelectedRows.Count == 0)
             {
@@ -260,32 +342,48 @@ namespace CircleRegistrationSystem.Forms
             }
 
             var selectedId = (Guid)dgvRegistrations.SelectedRows[0].Cells["Id"].Value;
-            var registration = _registrationService.GetAllRegistrations()
-                .FirstOrDefault(r => r.Id == selectedId);
+
+            // Находим заявку в списке
+            var registration = _allRegistrations?.FirstOrDefault(r => r.Id == selectedId);
 
             if (registration != null)
             {
-                using (var detailsForm = new RegistrationDetailsForm(registration, _db))
+                // Создаем объект Registration из RegistrationWithDetails
+                var reg = new Registration
+                {
+                    Id = registration.Id,
+                    ParticipantId = registration.ParticipantId,
+                    CircleId = registration.CircleId,
+                    ApplicationDate = registration.ApplicationDate,
+                    Status = registration.Status,
+                    ApprovalDate = registration.ApprovalDate,
+                    RejectionReason = registration.RejectionReason,
+                    CreatedAt = registration.CreatedAt
+                };
+
+                using (var detailsForm = new RegistrationDetailsForm(reg, _db))
                 {
                     detailsForm.ShowDialog();
+                    LoadData(); // Обновляем данные после закрытия формы
                 }
             }
         }
 
-        private void btnExport_Click(object sender, EventArgs e)
+        private void BtnExport_Click(object sender, EventArgs e)
         {
             try
             {
                 using (var saveDialog = new SaveFileDialog())
                 {
-                    saveDialog.Filter = "CSV файлы (*.csv)|*.csv|Все файлы (*.*)|*.*";
-                    saveDialog.FileName = $"Регистрации_{DateTime.Now:yyyyMMdd}.csv";
+                    saveDialog.Filter = "CSV файлы (*.csv)|*.csv|Excel файлы (*.xlsx)|*.xlsx|Все файлы (*.*)|*.*";
+                    saveDialog.FileName = $"Заявки_{DateTime.Now:yyyyMMdd_HHmm}";
+                    saveDialog.RestoreDirectory = true;
 
                     if (saveDialog.ShowDialog() == DialogResult.OK)
                     {
                         ExportToCsv(saveDialog.FileName);
-                        MessageBox.Show("Данные экспортированы успешно", "Успех",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"Данные успешно экспортированы в файл:\n{saveDialog.FileName}",
+                            "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
@@ -298,12 +396,53 @@ namespace CircleRegistrationSystem.Forms
 
         private void ExportToCsv(string filePath)
         {
-            // Реализация экспорта в CSV
-            // ...
+            try
+            {
+                using (var writer = new System.IO.StreamWriter(filePath, false, System.Text.Encoding.UTF8))
+                {
+                    // Заголовок
+                    writer.WriteLine("Экспорт заявок;Дата: " + DateTime.Now.ToString("dd.MM.yyyy HH:mm"));
+                    writer.WriteLine();
+
+                    // Заголовки колонок
+                    var headers = new List<string>();
+                    foreach (DataGridViewColumn column in dgvRegistrations.Columns)
+                    {
+                        if (column.Visible && column.Name != "Id")
+                            headers.Add(column.HeaderText);
+                    }
+                    writer.WriteLine(string.Join(";", headers));
+
+                    // Данные
+                    foreach (DataGridViewRow row in dgvRegistrations.Rows)
+                    {
+                        if (row.IsNewRow) continue;
+
+                        var cells = new List<string>();
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            if (cell.OwningColumn.Visible && cell.OwningColumn.Name != "Id")
+                            {
+                                string cellValue = cell.Value?.ToString() ?? "";
+                                // Экранируем точку с запятой
+                                if (cellValue.Contains(";") || cellValue.Contains("\""))
+                                    cellValue = $"\"{cellValue.Replace("\"", "\"\"")}\"";
+                                cells.Add(cellValue);
+                            }
+                        }
+                        writer.WriteLine(string.Join(";", cells));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Ошибка при экспорте в CSV: {ex.Message}", ex);
+            }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
+            DialogResult = DialogResult.OK;
             Close();
         }
     }
